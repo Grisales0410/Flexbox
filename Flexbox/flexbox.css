@@ -1,0 +1,64 @@
+h1{
+    font-size: 50px;
+    color: blueviolet;
+    text-align: center;
+}
+
+.contenedor-1,
+.contenedor-2{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    background-color: gray;
+    margin: 10px auto;
+    display: flex; /*activar flexbox*/
+}
+
+.contenedor-2{
+    background-color: rgb(215, 213, 213);
+}
+
+.items-1,
+.items-2,
+.items-3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.items-2{
+    background-color: green;
+}
+
+.items-3{
+    background-color: yellow;
+}
+
+.contenedor-1{
+    /*flex-direction: row;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+   /*flex-wrap: wrap;*/
+    /*align-content: flex-start;*/
+    flex-flow:  row wrap;
+}
+
+.contenedor-2{
+    /*flex-direction: column;*/
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*flex-wrap: wrap;*/
+    /*align-content: flex-start;*/
+    flex-flow: column wrap;
+    
+}
+
+
+.items-2{
+    order: 0;
+    align-self: center;
+}
+
+.items-3{
+    align-self: flex-end;
+}
